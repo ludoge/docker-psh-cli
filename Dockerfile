@@ -3,7 +3,7 @@ FROM php:7-cli
 RUN apt-get update
 
 # Install Git and SSH CLI clients as well as python3.5
-RUN apt-get install --no-install-recommends -y git ssh-client python3-pip
+RUN apt-get install --no-install-recommends -y git ssh-client python3-pip rsync
 
 # Install the Platform.sh CLI
 ADD install-cli.sh .
